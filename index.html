@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>boom</title>
+	<style type="text/css">
+		body,section,img{padding: 0; margin: 0;}
+		.wrap{width: 1000px; margin: auto; }
+		section{margin-bottom: 50px; margin: auto;   }
+		.ground{ position: absolute;   margin-top: 50px;  width: 1200px;  right: 350px; z-index: 20;  display: block;}
+		img{display: block;}
+		.kingsman{width: 1080px;  position: relative; right: 30px; bottom: 10px; 
+				animation: ro 1s infinite linear;  display: block; z-index: 50; animation-direction: alternate;}
+
+		.cloud {position: relative; width: 800px; z-index: 1; bottom: 500px; right: 100px; display: block;}
+		.bam6{ z-index: 40; position: relative;bottom: 900px; left: 600px; animation: uo 0.6s infinite linear;  display: block;  animation-direction: alternate;}
+		.bround{ position: absolute; width: 1200px; top: 980px; right: 345px; margin-bottom: 130px; z-index: 8; display: block;}
+		.king{position: fixed; bottom: 120px; z-index: 12;}
+		.zap{position: absolute; z-index: 45; left: 700px; top: 30px; width: 500px;}
+		.zap2{position: absolute; z-index: 45; left: 240px; top: 830px; width: 500px;}
+		.pop{position: absolute; z-index: 19; left: 200px; top: 600px; width: 600px;}
+		.kingsman2{width: 400px;  position: absolute; left: 430px; top: 750px; 
+				animation: go 0.6s infinite linear;  display: block; z-index: 50; animation-direction: alternate;}
+	 /* 이름 시간 속도 방향*/
+	 		@keyframes  go {
+	 			from{transform: rotate3D(0,1,0,-10deg);}
+	 			to { transform: rotate3D(0,1,0,180deg); }}
+	 		@keyframes  ro {
+	 			from{transform: rotate3D(0,0,1,-10deg);}
+	 			to { transform: rotate3D(0,0,1,10deg); }}
+	 		@keyframes  uo {
+	 			from{ width:600px;}
+	 			to { width:700px; }}	 			
+	</style>
+</head>
+<body class="wrap">
+<section >
+<img src="./ground-01.png" class="ground">
+
+	<img src="./a3455.png" class="kingsman">
+	<img src="./a7656.png" class="kingsman2">	
+	<img src="./cloud.gif" class="cloud">
+	<img src="./bam6.png" class="bam6">
+	<img src="./zap02.png" class="zap">
+	<img src="./pop.gif" class="pop">
+	<img src="./ground-08.png" class="bround">
+	<img src="./a7224.png" class="king">
+	<img src="./zap01.png" class="zap2">
+	<img src="./ground-07.png" class="pop" style="width: 680px; top: 590px;left: 820px;">
+
+
+
+</section>
+<section>
+	<img src="./ground-08.png" class="bround">
+	<img src="./bam3.png" class="zap" style="width: 300px; top: 400px; left: 1100px;">	
+</section>
+</body>
+</html>
