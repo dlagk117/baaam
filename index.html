@@ -4,55 +4,105 @@
 	<title>boom</title>
 	<style type="text/css">
 		body,section,img{padding: 0; margin: 0;}
-		.wrap{width: 1000px; margin: auto; }
+		.wrap{width: 100%; margin: auto; height: 100%}
 		section{margin-bottom: 50px; margin: auto;   }
-		.ground{ position: absolute;   margin-top: 50px;  width: 1200px;  right: 350px; z-index: 20;  display: block;}
+		.ground{ position: absolute; margin-top: 50px;  width: 1200px;  right: 350px; z-index: 20;  display: block;}
 		img{display: block;}
-		.kingsman{width: 1080px;  position: relative; right: 30px; bottom: 10px; 
+		.kingsman{width: 1080px;   position: absolute; right: 430px; bottom: 410px; 
 				animation: ro 1s infinite linear;  display: block; z-index: 50; animation-direction: alternate;}
 
-		.cloud {position: relative; width: 800px; z-index: 1; bottom: 500px; right: 100px; display: block;}
-		.bam6{ z-index: 40; position: relative;bottom: 900px; left: 600px; animation: uo 0.6s infinite linear;  display: block;  animation-direction: alternate;}
-		.bround{ position: absolute; width: 1200px; top: 980px; right: 345px; margin-bottom: 130px; z-index: 8; display: block;}
-		.king{position: fixed; bottom: 120px; z-index: 12;}
-		.zap{position: absolute; z-index: 45; left: 700px; top: 30px; width: 500px;}
+		.cloud { position: fixed; width:900px; height: 150px; z-index: 4; bottom: 700px; left: 550px; display: block;}
+		.bam6{ z-index: 40; position: absolute;bottom: 400px; right: 100px; animation: uo 0.6s infinite linear;  display: block;  animation-direction: alternate;}
+		.bround{ position: absolute; width: 1200px; top: 980px; right: 345px; margin-bottom: 130px; z-index: 5; display: block;}
+		.king{position: relative; top: 1120px; z-index: 11; display: block; left: 820px; width: 1100px; animation: zoo 10s infinite linear;  display: block;  animation-direction: alternate;}
+		.zap{position: absolute; z-index: 45; left: 500px; top: 530px; width: 500px;}
 		.zap2{position: absolute; z-index: 45; left: 180px; top: 830px; width: 500px; transform: rotate3d(0,0,1,-20deg);}
 		.pop{position: absolute; z-index: 19; left: 200px; top: 600px; width: 600px;}
 		.kingsman2{width: 400px;  position: absolute; left: 430px; top: 750px; 
 				animation: go 0.6s infinite linear;  display: block; z-index: 50; animation-direction: alternate;}
+		.kingsman3{width: 400px;  position: absolute; left: 430px; top: 750px; 
+				animation: go 0.5s infinite ease-out;  display: block; z-index: 50; animation-direction: alternate;}	
+		.temi{position: absolute; right: 430px; top: 580px; z-index: 30;
+			animation: vo 0.4s infinite  linear;  display: block; z-index: 50; animation-direction: alternate;}
+		.sunsin{ width: 380px; position: absolute; z-index: 47; left: 400px; top: 350px; animation: zo 10s infinite linear;  display: block;  animation-direction: alternate; }		
+
+		.hey{animation: yo 1.2s infinite ease-out;  display: block;  animation-direction: alternate; z-index: 60; position: absolute; left: 600px; width: 400px; transition: all ease 0.5s;
+			}
+			.hey:hover {
+				transform: rotate( 45deg );
+			}}	
+		
 	 /* 이름 시간 속도 방향*/
+	 		@keyframes  yo {
+	 			from{opacity: 0;}
+	 			to { opacity: 100; }}
 	 		@keyframes  go {
 	 			from{transform: rotate3D(0,1,0,-10deg);}
 	 			to { transform: rotate3D(0,1,0,180deg); }}
 	 		@keyframes  ro {
 	 			from{transform: rotate3D(0,0,1,-10deg);}
 	 			to { transform: rotate3D(0,0,1,10deg); }}
+	 		@keyframes  roo {
+	 			from{}
+	 			to { transform: rotate(360deg); }}	 			
 	 		@keyframes  uo {
-	 			from{ width:600px;}
-	 			to { width:700px; }}	 			
+	 			from{ width:800px; }
+	 			to { width:600px; }}
+	 		@keyframes  vo {
+	 			from{opacity: 0;}
+	 			to { opacity: 100;}}		 
+	 		@keyframes  zo {
+	 			from{left: 400px; top: 250px;}
+	 			to {left: 1200px; top: 350px;}}	
+	 		@keyframes  zoo {
+	 			from{ top: 250px;}
+	 			to { top: 1120px;}}
+	 		@keyframes  zooo {
+	 			from{ left: 20px;}
+	 			to { left: 100px;}}
+	 		@keyframes  zoom1 {
+	 			from{ top: 1300px;}
+	 			to { top: 1000px;}}	 				 				 				 						
 	</style>
 </head>
-<body class="wrap">
-<section >
+<body >
+<div class="wrap">
 <img src="./ground-01.png" class="ground">
+<section >
+
 
 	<img src="./a3455.png" class="kingsman">
-	<img src="./a7656.png" class="kingsman2">	
+	<img src="./a7656.png" class="kingsman2">
+	<img src="./a7656.png" class="kingsman3" style="left: 330px;">
+	<img src="./a7656.png" class="kingsman2" style="left: 230px;">	
 	<img src="./cloud.gif" class="cloud">
 	<img src="./bam6.png" class="bam6">
 	<img src="./zap02.png" class="zap">
 	<img src="./pop.gif" class="pop">
 	<img src="./ground-08.png" class="bround">
-	<img src="./a7224.png" class="king">
+	<img src="./a44.png" class="king">
 	<img src="./zap01.png" class="zap2">
 	<img src="./ground-07.png" class="pop" style="width: 680px; top: 590px;left: 820px;">
 
-
-
-</section>
-<section>
 	<img src="./ground-08.png" class="bround">
-	<img src="./bam3.png" class="zap" style="width: 300px; top: 400px; left: 1100px;">	
+	<img src="./bam3.png" class="zap" style="width: 300px; top: 600px; left: 500px;">	
+	<img src="./a3.png" class="temi">
+	<img src="./a345.png" class="sunsin">
+	<img src="ground-04.png" class="hey" style="left: 1200px; top: 800px;">
+	<img src="ground-05.png" class="hey" style="left: 750px; top: 600px;">	
+	<img src="ground-06.png" class="hey" style="left: 1300px; top: 620px;">	
+	<img src="fdfd.jpg" style="width: 600px; position: absolute; right: 320px; top: 20px;">
+	<img src="nghng.jpg" style="width: 860px; position: absolute; left: 200px; top: 15px;">
+	<img src="kmhk.jpg" style="   border: 1px solid white;
+   border-radius: 50%; z-index: 10; width: 500px; z-index:8; position: absolute; left:800px; top: 1005px; animation: roo 15s infinite alternate;  display: block; animation-direction: alternate;">		
+	<img src="kmhk.jpg" style="   border: 1px solid white;
+   border-radius: 50%; z-index: 10; width: 200px; z-index:8; position: absolute; left:500px; top: 1205px; animation: roo 8s infinite alternate;  display: block; animation-direction: alternate;">
+   	<img src="kmhk.jpg" style="   border: 1px solid white;
+   border-radius: 50%; z-index: 10; width: 250px; z-index:8; position: absolute; left:300px; top: 1405px; animation: roo 17s infinite alternate;  display: block; animation-direction: alternate;">		   
+	<img src="./232.gif" style="top: 1000px; position: absolute; animation: zooo 2s infinite alternate;  display: block; animation-direction: alternate;">
+	<img src="./a125.png" style=" width: 580px; position: absolute; z-index: 47; left: 600px; top: 1350px; animation: zoom1 1.1s  infinite linear;  display: block;  animation-direction: alternate;">
+	<img src="zap02.png" style="width: 800px; z-index: 24; position: absolute; right: 50px; top: 1200px;">
 </section>
+</div>
 </body>
 </html>
